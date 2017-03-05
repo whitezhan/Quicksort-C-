@@ -18,9 +18,11 @@ void Quicksort(int* arr,int izq,int der)
     }
     if (izq<j) Quicksort(arr,izq,j);
     if (i<der) Quicksort(arr,i,der);
-
 }
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int arreglo[10]={43,23,-12,34,43,54,67,23,63,10};
+    Quicksort(arreglo,0,9);
+    int i=0;
+    for(i;i<10;i++) cout<<arreglo[i]<<",";
     return 0;
 }
